@@ -10,4 +10,7 @@
     <access origin="*" />
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="true" />
+	<icon src="res/icon/icon.png">
+		
+	</icon>
 </widget>
