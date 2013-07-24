@@ -1,0 +1,38 @@
+.ui-comboBarB-span{
+	width: 100%;
+	display:block;
+	background-color: #C3CACA;
+	padding-left: 10px;
+
+}
+
+.ui-comboBarB-input{
+	display:block;
+	padding-left: 10px;
+
+}
+
+.ui-comboBarB-div{
+	display: block;
+	position: absolute;
+	z-index: 4999; 
+	padding: 0 0 0 0;
+	max-height: 200px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	color: grey;
+}
+
+.ui-widget-border{
+	border-style:solid;
+	border-width:1px;
+	border-color:#B1A9A9;
+}
+
+.ui-comboBarB-span:hover{
+	background-color:#96B0D8;
+}
+
+.ui-state-selected{
+	background-color:#96B0D8;
+}

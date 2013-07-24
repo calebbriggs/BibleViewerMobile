@@ -1,0 +1,23 @@
+D:\AndroidDevelopment\BibleViewer\platforms\android\gen\com\barbstudios\BibleViewer\R.java \
+ : D:\AndroidDevelopment\BibleViewer\platforms\android\res\drawable\icon.png \
+D:\AndroidDevelopment\BibleViewer\platforms\android\res\drawable-hdpi\icon.png \
+D:\AndroidDevelopment\BibleViewer\platforms\android\res\drawable-hdpi\ic_launcher.png \
+D:\AndroidDevelopment\BibleViewer\platforms\android\res\drawable-ldpi\icon.png \
+D:\AndroidDevelopment\BibleViewer\platforms\android\res\drawable-ldpi\ic_launcher.png \
+D:\AndroidDevelopment\BibleViewer\platforms\android\res\drawable-mdpi\icon.png \
+D:\AndroidDevelopment\BibleViewer\platforms\android\res\drawable-mdpi\ic_launcher.png \
+D:\AndroidDevelopment\BibleViewer\platforms\android\res\drawable-xhdpi\icon.png \
+D:\AndroidDevelopment\BibleViewer\platforms\android\res\drawable-xhdpi\ic_launcher.png \
+D:\AndroidDevelopment\BibleViewer\platforms\android\res\layout\main.xml \
+D:\AndroidDevelopment\BibleViewer\platforms\android\res\values\strings.xml \
+D:\AndroidDevelopment\BibleViewer\platforms\android\res\xml\config.xml \
+D:\AndroidDevelopment\BibleViewer\platforms\android\bin\res\drawable\icon.png \
+D:\AndroidDevelopment\BibleViewer\platforms\android\bin\res\drawable-hdpi\icon.png \
+D:\AndroidDevelopment\BibleViewer\platforms\android\bin\res\drawable-hdpi\ic_launcher.png \
+D:\AndroidDevelopment\BibleViewer\platforms\android\bin\res\drawable-ldpi\icon.png \
+D:\AndroidDevelopment\BibleViewer\platforms\android\bin\res\drawable-ldpi\ic_launcher.png \
+D:\AndroidDevelopment\BibleViewer\platforms\android\bin\res\drawable-mdpi\icon.png \
+D:\AndroidDevelopment\BibleViewer\platforms\android\bin\res\drawable-mdpi\ic_launcher.png \
+D:\AndroidDevelopment\BibleViewer\platforms\android\bin\res\drawable-xhdpi\icon.png \
+D:\AndroidDevelopment\BibleViewer\platforms\android\bin\res\drawable-xhdpi\ic_launcher.png \
+D:\AndroidDevelopment\BibleViewer\platforms\android\bin\AndroidManifest.xml \
