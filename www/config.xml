@@ -13,6 +13,6 @@
 	<preference name="target-device" value="universal" />
 	<preference name="splash-screen-duration" value="500" />
 	<icon src="res/icon/icon.png" />
-  <gap:splash src="img/logo.png" />
+  
 	
 </widget>
