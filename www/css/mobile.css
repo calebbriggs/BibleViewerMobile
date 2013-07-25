@@ -25,6 +25,7 @@ body {
     overflow-y:scroll; /* use this if don't want any window scrollbars and use an inner element for scrolling*/
     color: #4C4A45;
     background:#EDEDED;
+	font-size: 18px;
 }
 .footer{ bottom: 0;}
 .header{ top: 0;}
@@ -57,7 +58,7 @@ body {
 }
 
 #search-box {
-    width: 99.5%;
+    width: 75.75%;
     margin-bottom: 0px;
     margin-top: 3px;
 }
@@ -88,7 +89,7 @@ label {
 }
 
 p .verse{
-	font-size:10px;
+	
 	font-weight:bold;
 	margin:0 1px;
 	color:#888;
@@ -97,7 +98,8 @@ p .verse{
 	width:16px;
 	border:1px solid #ccc;
 	background:#e0e0e0;
-	padding:2px;
+	padding:3px;
+	
 
 }
 

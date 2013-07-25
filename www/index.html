@@ -62,10 +62,13 @@
     <div class="waffles">
         <div class="header" >
             <div class="w-auto">
+				
                 <img style="height: 40px; margin-top: 2px; margin-left: 2px;" src="css/images/bibleViewer_icon.png" />
             </div>
             <div class="w-auto">
-                <input id="search-box"type="text" data-bind="value: searchTerm, valueUpdate: 'afterkeydown' " title="Search..."/>
+					<span  class="icon search big" style="padding-top: 10px;" data-bind="click: getSearchData"></span>
+					<input id="search-box"type="text" data-bind="value: searchTerm, valueUpdate: 'afterkeydown' " title="Search..."/>				
+					
             </div>   
             
         </div>

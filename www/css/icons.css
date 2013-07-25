@@ -32,6 +32,9 @@ li .icon:before {
 .icon.big:before {
 	font-size:1.5em;
 }
+.icon.search:before {
+	content: "\en";
+}
 .icon.home:before {
 	content: "\5a";
 }

@@ -72,4 +72,6 @@
     <preference name="exit-on-suspend" value="false" />
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="true" />
+    <preference name="target-device" value="universal" />
+    <preference name="splash-screen-duration" value="500" />
 </widget>
