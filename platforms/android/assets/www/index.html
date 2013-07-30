@@ -61,15 +61,20 @@
 <body>
     <div class="waffles">
         <div class="header" >
-            <div class="w-auto">
-				
-                <img style="height: 40px; margin-top: 2px; margin-left: 2px;" src="css/images/bibleViewer_icon.png" />
+            <div class="w-4 w-alpha">
+				<img style="height: 55px; margin-top: 2px; margin-left: 2px;" src="css/images/bibleViewer_icon.png" />
             </div>
-            <div class="w-auto">
-					<span  class="icon search big" style="padding-top: 10px;" data-bind="click: getSearchData"></span>
-					<input id="search-box"type="text" data-bind="value: searchTerm, valueUpdate: 'afterkeydown' " title="Search..."/>				
-					
-            </div>   
+			<div class="w-8 w-omega">
+				<div class="w-fix w-11 w-omega">
+					<div class="w-4 w-alpha">
+						<span  class="icon search big" id='search-icon' data-bind="click: getSearchData"></span>
+					</div>
+					<div class="w-8 w-omega">
+						<input id="search-box"type="text" data-bind="value: searchTerm, valueUpdate: 'afterkeydown' " title="Search..."/>				
+					</div>
+						
+				</div>
+			</div>
             
         </div>
         <div class="content">
@@ -97,7 +102,7 @@
                                 </div>
                             </div>
                             <div class="w-auto">
-                                <button style=" width: 100%;"class="button" data-bind="click: getRandomChapter">Get Random Chapter </button>
+                                <button style=" width: 100%;"class="button" data-bind="click: getRandomChapter">Random Chapter </button>
                             </div>
                         </div>
                     </div>
@@ -136,8 +141,8 @@
             </div>
         </div>
         <div class="footer">
-            <div  class="icon left w-auto" data-bind="click: previousChapter, visible: !searchVisible() && currentChapter()"></div>
-            <div class="icon right w-auto" data-bind="click: nextChapter, visible: !searchVisible() && currentChapter()"></div>
+            <div  class="icon left w-auto big" data-bind="click: previousChapter, visible: !searchVisible() && currentChapter()"></div>
+            <div class="icon right w-auto big" data-bind="click: nextChapter, visible: !searchVisible() && currentChapter()"></div>
         </div>        
     </div>
 </body>

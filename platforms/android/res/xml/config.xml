@@ -14,25 +14,21 @@
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.Device" />
     </feature>
-       <feature name="Media">
+    <feature name="Media">
         <param name="android-package" value="org.apache.cordova.AudioHandler" />
     </feature>
-    
     <feature name="File">
         <param name="android-package" value="org.apache.cordova.FileUtils" />
     </feature>
     <feature name="NetworkStatus">
         <param name="android-package" value="org.apache.cordova.NetworkManager" />
     </feature>
-    
     <feature name="Storage">
         <param name="android-package" value="org.apache.cordova.Storage" />
     </feature>
-    
     <feature name="Capture">
         <param name="android-package" value="org.apache.cordova.Capture" />
     </feature>
-    
     <feature name="SplashScreen">
         <param name="android-package" value="org.apache.cordova.SplashScreen" />
     </feature>
@@ -42,7 +38,6 @@
     <feature name="Globalization">
         <param name="android-package" value="org.apache.cordova.Globalization" />
     </feature>
-    
     <plugins>
     </plugins>
     <access origin="*" />
@@ -51,5 +46,5 @@
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="true" />
     <preference name="target-device" value="universal" />
-    <preference name="splash-screen-duration" value="500" />
+    <preference name="splash-screen-duration" value="3000" />
 </widget>

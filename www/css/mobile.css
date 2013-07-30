@@ -11,7 +11,7 @@ body {
     background:#0088D1;
     color:#EDEDED;
 	position:absolute;
-	height:45px;
+	height:60px;
  }
 .header h1 {
     margin-top: 0;
@@ -20,8 +20,8 @@ body {
 }
 
 .content{
-    top:45px;
-    bottom:45px;
+    top:60px;
+    bottom:60px;
     overflow-y:scroll; /* use this if don't want any window scrollbars and use an inner element for scrolling*/
     color: #4C4A45;
     background:#EDEDED;
@@ -34,13 +34,13 @@ body {
 	text-decoration: none;
 	color: #EDEDED;
 	text-align: center;
-    margin-top: 10px !important;
+    margin-top: 5px !important;
 }
 
 .button {
 	position: relative;
 	display: inline-block;
-	padding: 6px 12px;
+	padding: 18px 12px;
 	margin: 10px 0;
 	font-weight: bold;
 	color: #000;
@@ -58,14 +58,17 @@ body {
 }
 
 #search-box {
-    width: 75.75%;
     margin-bottom: 0px;
-    margin-top: 3px;
+    margin-top: 1px;
+}
+#search-icon:before{
+	top: .2em !important;
+	left: 3em;
 }
 
 input[type="text"], select{
   width: 100%;
-  height: 40px;
+  height: 55px;
   padding: 10px;
   margin-bottom: 10px;
   margin-top: 10px;
@@ -113,5 +116,5 @@ p .verse:hover{
 .footer div.selected{
     color: black;
     margin-top: -10px; 
-    margin-bottom: 10px !important;
+    margin-bottom: 5px !important;
 }

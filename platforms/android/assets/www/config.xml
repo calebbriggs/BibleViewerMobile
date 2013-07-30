@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.barbstudios.BibleViewer" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.barbstudios.BibleViewer" version="0.0.5" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Bible Viewer</name>
     <description>
         A mobile bible that is the King James Version with seacrh capable of just words in the bible or exact verses
@@ -11,7 +11,7 @@
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="true" />
 	<preference name="target-device" value="universal" />
-	<preference name="splash-screen-duration" value="500" />
+	<preference name="splash-screen-duration" value="3000" />
 	<icon src="res/icon/icon.png" />
   
 	

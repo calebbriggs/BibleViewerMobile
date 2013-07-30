@@ -15,7 +15,7 @@
 	line-height:1;
 	color:inherit;
 	position:relative;
-	font-size:1em;
+	font-size:2.0em;
 	left:-3px; top:2px;
 }
 li .icon:before {
@@ -27,10 +27,10 @@ li .icon:before {
 }
 
 .icon.mini:before {
-	font-size:.7em;
+	font-size:1.5em;
 }
 .icon.big:before {
-	font-size:1.5em;
+	font-size:2.5em;
 }
 .icon.search:before {
 	content: "\en";
