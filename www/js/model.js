@@ -13,7 +13,7 @@ var model = function (books) {
   				    });
   				});
   				this.bibles = ["ASV", "KJV"];
-  				this.currentBible = ko.observable();
+  				this.currentBible = ko.observable("KJV");
   				this.startingVerse = ko.observable(0);
   				this.endingVerse = ko.observable(0);
   				this.searchTerm = ko.observable();
@@ -43,27 +43,30 @@ var model = function (books) {
 				});
 				this.getSearchData = function () {
 				    
-				    var searchTerm = _self.searchTerm();
-				    if (!searchTerm) return;
-					var verses = _.filter(searchArray, function (verse) {
-						var chVerse = verse.chapter + ":" + verse.verse;
-						return verse.text.contains(searchTerm) || (searchTerm.contains(verse.book) && searchTerm.contains(chVerse));
-					});
-					var searchResult = _.map(verses, function (verse) {
-					    verse.click = function() {
-					        var book = _.find(_self.books(), function(b) { return b.Book == verse.book; });
-					        _self.currentBook(book);
-					        _self.searchResultsVisible(false);
-					        _self.searchClickChapter(verse.chapter);
-					        _self.homeClick();
-					    };
-					    
-					    return verse;
-					});
-					_self.searchResults(searchResult);
-					_self.searchResultsVisible(true);
-					
-					_self.searchCheck = _self.searchTerm();
+				    var postData = { searchTerm: _self.searchTerm() };
+				    $.ajax({
+				        url: 'http://bible.barbstudios.com/search',
+				        async: true,
+				        data: JSON.stringify(postData),
+				        type: "Post",
+				        contentType: 'application/json',
+				        success: function (result) {
+				            var searchResult = _.map(result, function (verse) {
+				                verse.click = function () {
+				                    var book = _.find(_self.books(), function (b) { return b.Book == verse.book; });
+				                    _self.currentBook(book);
+				                    _self.searchResultsVisible(false);
+				                    _self.searchClickChapter(verse.chapter);
+				                }
+				                return verse;
+				            });
+				            _self.searchResults(searchResult);
+				            _self.searchResultsVisible(true);
+				            _self.searchCheck = _self.searchTerm();
+				        }
+
+
+				    });
 				};
 
 	  			this.currentBible.subscribe(function (newValue) {
@@ -154,33 +157,45 @@ var model = function (books) {
 	  		};
 			
   			var getBookFromBible = function(){
-  			    var currentBook = _.find(bible.books, function (book) { return book.name == _self.currentBook().Book; });
-  			    _self.chapters(currentBook.chapters);
+  			    var postData = { currentBible: _self.currentBible(), currentBook: _self.currentBook().Book };
+  			    $.ajax({
+  			        url: 'http://bible.barbstudios.com',
+  			        async: true,
+  			        data: JSON.stringify(postData),
+  			        type: "Post",
+  			        contentType: 'application/json',
+  			        success: function (result) {
+  			            _self.chapters(result.chapters);
 
-  			    if (_self.currentChapterNumber()) {
-  			        _self.currentChapter(currentBook.chapters[_self.currentChapterNumber()]);
-  			    }
+  			            if (_self.currentChapterNumber()) {
+  			                _self.currentChapter(result.chapters[_self.currentChapterNumber()]);
+  			            }
 
-  			    else {
-  			        _self.currentChapter(currentBook.chapters[0]);
-  			    }
-
-
-  			    if (_self.currentChapterNumber()) {
-  			        _self.currentChapter(currentBook.chapters[_self.currentChapterNumber()]);
-  			    }
+  			            else {
+  			                _self.currentChapter(result.chapters[0]);
+  			            }
 
 
-  			    if (_self.random) {
-  			        var randomchapternumber = getRandomNumber(_self.chapters().length);
-  			        var chapter = _.find(_self.chapters(), function (ch) { return ch.number == randomchapternumber; });
-  			        _self.currentChapter(chapter);
-  			        _self.random = false;
-  			    }
-  			    if (_self.backAChapter) {
-  			        _self.currentChapter(currentBook.chapters[currentBook.chapters.length - 1]);
-  			        _self.backAChapter = false;
-  			    }
-  			};  			
+  			            if (_self.currentChapterNumber()) {
+  			                _self.currentChapter(result.chapters[_self.currentChapterNumber()]);
+  			            }
+
+
+  			            if (_self.random) {
+  			                var randomchapternumber = getRandomNumber(_self.chapters().length);
+  			                var chapter = _.find(_self.chapters(), function (ch) { return ch.number == randomchapternumber; });
+  			                _self.currentChapter(chapter);
+  			                _self.random = false;
+  			            }
+  			            if (_self.backAChapter) {
+  			                _self.currentChapter(result.chapters[result.chapters.length - 1]);
+  			                _self.backAChapter = false;
+  			            }
+  			        }
+
+
+  			    });
+  			};
+
 
   		};

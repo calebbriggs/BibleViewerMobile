@@ -63,7 +63,7 @@ body {
 }
 #search-icon:before{
 	top: .2em !important;
-	left: 3em;
+    float: right;
 }
 
 input[type="text"], select{
@@ -79,6 +79,7 @@ input[type="text"], select{
   font-weight: normal;
   -webkit-appearance: none;
   box-sizing: border-box;
+  z-index:1000;
 }
 
 label {

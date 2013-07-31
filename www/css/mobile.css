@@ -63,7 +63,7 @@ body {
 }
 #search-icon:before{
 	top: .2em !important;
-	left: 3em;
+    float: right;
 }
 
 input[type="text"], select{
