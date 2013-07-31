@@ -4,14 +4,7 @@ String.prototype.contains = function(str) {
 
 var model = function (books) {
   				var _self =this;		
-  				var searchArray = [];
-  				_.each(bible.books, function (book) {
-  				    _.each(book.chapters, function (chapter) {
-  				        _.each(chapter.verses, function (verse) {
-  				            searchArray.push({ book: book.name, chapter: chapter.number, verse: verse.number, text: verse.text });
-  				        });
-  				    });
-  				});
+  				
   				this.bibles = ["ASV", "KJV"];
   				this.currentBible = ko.observable("KJV");
   				this.startingVerse = ko.observable(0);
