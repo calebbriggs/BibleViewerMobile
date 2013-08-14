@@ -10,9 +10,8 @@
     <access origin="*" />
     <preference name="fullscreen" value="true" />
     <preference name="webviewbounce" value="true" />
-	<preference name="target-device" value="universal" />
-	<preference name="splash-screen-duration" value="3000" />
-	<icon src="res/icon/icon.png" />
-  
-	
+    <preference name="target-device" value="universal" />
+    <preference name="splash-screen-duration" value="3000" />
+    <icon src="res/icon/icon.png" />
+    <content src="index.html" />
 </widget>
