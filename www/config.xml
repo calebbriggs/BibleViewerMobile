@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.barbstudios.BibleViewer" version="0.0.7" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.barbstudios.BibleViewer" version="0.0.7" xmlns="http://www.w3.org/ns/widgets" xmlns:gap = "http://phonegap.com/ns/1.0" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Bible Viewer</name>
     <description>
         A mobile bible that is the King James Version with seacrh capable of just words in the bible or exact verses
@@ -13,12 +13,10 @@
     <preference name="target-device" value="universal" />
     <preference name="splash-screen-duration" value="3000" />
     <icon src="res/icon/icon.png" />
-	<icon src="res/icon/ios/icon.png" gap:platform="ios" width="57" height="57" />
-	<icon src="res/icon/ios/icon-72.png" gap:platform="ios" width="72" height="72" />
-	<icon src="res/icon/ios/icon_at_2x.png" gap:platform="ios" width="114" height="114" />
-
-<!-- retina iPad support: PhoneGap 2.5.0+ only -->
-	<icon src="res/icon/ios/icon-72_at_2x.png" gap:platform="ios" width="144" height="144" />
+	<icon src="res/icon/ios/icon-57.png"              gap:platform="ios"        width="57" height="57" />
+    <icon src="res/icon/ios/icon-72.png"              gap:platform="ios"        width="72" height="72" />
+    <icon src="res/icon/ios/icon-57-2x.png"         gap:platform="ios"        width="114" height="114" />
+    <icon src="res/icon/ios/icon-72-2x.png"         gap:platform="ios"        width="144" height="144" />
 	
     <content src="index.html" />
 </widget>
